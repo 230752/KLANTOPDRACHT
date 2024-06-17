@@ -17,7 +17,7 @@ include ("../database/db_connect.php");
     <div id="container">
         <?php include (BASE_PATH . "/header.php"); ?>
         <main>
-
+        
         </main>
         <?php include (BASE_PATH . "/footer.php"); ?>
     </div>
