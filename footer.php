@@ -1,3 +1,8 @@
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
 <footer>
     <div id="socialmedia-container">
         <a href="#" class="fa fa-instagram" style="font-size:50px"></a>
