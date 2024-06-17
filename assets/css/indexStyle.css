@@ -7,9 +7,8 @@ main div {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 3px 10px 4px lightgray;
-  margin: 40px;
   border-radius: 10px;
+  margin: 20px;
   padding: 20px;
 }
 
@@ -95,7 +94,7 @@ main div {
     font-size: 1.7rem;
   }
   .intro-text {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   .mySlides {
     max-width: 580px;
@@ -133,6 +132,7 @@ main div {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .info-box-img {
