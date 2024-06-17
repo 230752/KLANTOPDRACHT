@@ -1,0 +1,185 @@
+main div {
+  padding: 10px;
+}
+
+#head-title {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  transition: font-size 1s;
+}
+
+@media (max-width: 340px) {
+  #head-title {
+    font-size: 2.5rem;
+  }
+  #second-title {
+    transition: font-size 1s;
+    font-size: 1.4rem;
+  }
+}
+
+/* Slideshow css */
+#slideshow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  z-index: 1;
+  box-shadow: 0px 3px 10px 4px lightgray;
+  border-radius: 10px;
+}
+
+#second-title-text {
+  font-size: 1.1em;
+}
+
+#second-border {
+  border-bottom: solid 1px;
+  padding: 20px;
+  margin: 0;
+}
+
+#intro-text {
+  padding: 20px;
+}
+
+#slideshow-img {
+  opacity: 0.6;
+  width: 100%;
+}
+
+.mySlides {
+  width: 100%;
+  box-shadow: 0px 3px 10px 4px lightgray;
+  transition: 1s;
+}
+
+.mySlides fade {
+  border: none;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 930px) {
+  .mySlides {
+    width: 680px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 720px) {
+  .mySlides {
+    width: 80%;
+    height: auto;
+  }
+}
+
+#info-box-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.info-box {
+  width: 30%;
+  border-radius: 10px;
+  box-shadow: 0px 3px 10px 3px lightgray;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-box-img {
+  width: 70%;
+}
+
+@media (max-width: 1000px) {
+  #info-box-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .info-box {
+    width: 80%;
+  }
+}
+
+#service-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#service-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  background-color: lightgray;
+}
+
+#socialmedia-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 3rem;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.3;
+}
+
+.fa-instagram {
+  color: red;
+}
+
+.fa-facebook {
+  color: #3B5998;
+}
+
+.fa-twitter {
+  color: #55ACEE;
+}
+
+#copyright-container {
+  display: flex;
+  justify-content: center;
+}
