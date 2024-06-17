@@ -1,7 +1,7 @@
 <header>
     <div id="logo-container">
         <a href="index.php">
-            <img id="header-logo" src="<?=BASEURL?>assets/img/weblogo.png" alt="weblogo">
+            <img id="header-logo" src="<?=BASEURL?>assets/img/weblogo2.png" alt="weblogo">
         </a>
     </div>
     <div id="header-buttons-container">

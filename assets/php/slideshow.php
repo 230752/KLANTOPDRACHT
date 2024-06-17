@@ -1,5 +1,6 @@
 <div id="slideshow-container">
     <div id="intro">
+        <img id="portrait" src="assets/img/hendrik.png" alt="hendrik">
         <h1 id="head-title">Hendrik Hogendijk:</h1>
         <p id="head-border" class="intro-text">"De tuin is een belangrijke plek van de woning, waar je
             het liefst zoveel mogelijk tijd in doorbrengt".</p>
