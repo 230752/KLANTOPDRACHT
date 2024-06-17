@@ -20,6 +20,7 @@ function prettyDump($var) {
 }
 
 define("BASEURL", "http://localhost/");
+define("BASE_PATH", "C:/xampp/htdocs");
 
 if(!isset($_SESSION['login'])) {
     $_SESSION['login'] = false;

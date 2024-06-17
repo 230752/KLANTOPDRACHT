@@ -8,11 +8,9 @@
             zijn of haar tuin.
         </p>
     </div>
-    <div id="slideshow-img">
-        <img class="mySlides fade" src="assets/img/slideshow_foto_1.png" width="1000" height="600" alt="slideshow">
-        <img class="mySlides fade" src="assets/img/slideshow_foto_2.png" width="1000" height="600" alt="slideshow">
-        <img class="mySlides fade" src="assets/img/slideshow_foto_3.png" width="1000" height="600" alt="slideshow">
-    </div>
+    <img class="mySlides fade" src="assets/img/slideshow_foto_1.png" width="1000" height="600" alt="slideshow">
+    <img class="mySlides fade" src="assets/img/slideshow_foto_2.png" width="1000" height="600" alt="slideshow">
+    <img class="mySlides fade" src="assets/img/slideshow_foto_3.png" width="1000" height="600" alt="slideshow">
 </div>
 <script>
     let slideIndex = 1; // Start with the first slide immediately
