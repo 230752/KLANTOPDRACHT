@@ -2,71 +2,69 @@ main div {
   padding: 10px;
 }
 
-#head-title {
-  font-size: 3rem;
-  display: flex;
-  justify-content: center;
-  transition: font-size 1s;
-}
-
-@media (max-width: 340px) {
-  #head-title {
-    font-size: 2.5rem;
-  }
-  #second-title {
-    transition: font-size 1s;
-    font-size: 1.4rem;
-  }
-}
-
 /* Slideshow css */
 #slideshow-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  margin: 0;
-  padding: 0;
+  box-shadow: 0px 3px 10px 4px lightgray;
+  margin: 40px;
+  border-radius: 10px;
+  padding: 20px;
 }
 
 #intro {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   flex-direction: column;
-  position: absolute;
   z-index: 1;
-  box-shadow: 0px 3px 10px 4px lightgray;
   border-radius: 10px;
 }
 
-#second-title-text {
+#head-title {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  transition: font-size 1s;
+}
+
+.intro-text {
   font-size: 1.1em;
 }
 
-#second-border {
+#head-border {
   border-bottom: solid 1px;
   padding: 20px;
   margin: 0;
 }
 
-#intro-text {
-  padding: 20px;
-}
-
 #slideshow-img {
-  /* opacity: 0.6; */
-  width: 100%;
+  opacity: 0.6;
 }
 
 .mySlides {
+  max-width: 600px;
+  max-height: 480px;
+  height: auto;
+  box-shadow: 0px 3px 10px 4px lightgray;
   transition: 1s;
-  width: 100%;
-  
+  border-radius: 10px;
 }
 
 .mySlides fade {
   border: none;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
 
 .active {
@@ -78,28 +76,46 @@ main div {
   animation-duration: 1.5s;
 }
 
+
 @keyframes fade {
   from {
     opacity: 0.4;
   }
-
+  
   to {
     opacity: 1;
   }
 }
 
-@media (max-width: 930px) {
+@media (max-width: 1150px) {
+  #slideshow-container {
+    margin: 20px;
+  }
+  #head-title {
+    font-size: 1.7rem;
+  }
+  .intro-text {
+    font-size: 0.8rem;
+  }
   .mySlides {
-    width: 680px;
-    height: 400px;
+    max-width: 580px;
+    max-height: 380px;
   }
 }
 
-@media (max-width: 720px) {
-  .mySlides {
-    width: 80%;
-    height: auto;
+@media (max-width: 1000px) {
+  #slideshow-container {
+    display: flex;
+    flex-direction: column;
   }
+  .mySlides {
+    max-width: 400px;
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 340px) {
+
 }
 
 #info-box-container {
@@ -149,5 +165,5 @@ main div {
 }
 
 .service-box-img {
-  width: 20%;
+  width: 50%;
 }

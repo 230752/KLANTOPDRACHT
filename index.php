@@ -79,7 +79,7 @@
                 </div>
             </div>
         </main>
-        <?php include("footer.php"); ?>
+        <?php include(BASE_PATH . "/footer.php"); ?>
     </div>
 </body>
 
