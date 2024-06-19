@@ -1,11 +1,7 @@
 <header>
     <div id="logo-container">
         <a href="/index.php">
-<<<<<<< Updated upstream
-            <img id="header-logo" src="<?=BASEURL?>assets/img/weblogo.png" alt="weblogo">
-=======
             <img id="header-logo" src="<?=BASEURL?>assets/img/weblogo2.png" alt="weblogo">
->>>>>>> Stashed changes
         </a>
     </div>
     <div id="header-buttons-container">

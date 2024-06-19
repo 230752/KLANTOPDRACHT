@@ -4,12 +4,6 @@
 </head>
 
 <footer>
-<<<<<<< Updated upstream
-    <div id="socialmedia-container">
-        <a href="#" class="fa fa-instagram" style="font-size:50px"></a>
-        <a href="#" class="fa fa-facebook" style="font-size:50px"></a>
-        <a href="#" class="fa fa-twitter" style="font-size:50px"></a>
-=======
     <div id="footer-content">
         <div id="adres-container">
             <p class="footer-title">Adress</p>
@@ -25,7 +19,6 @@
                 <a href="#" class="fa fa-twitter" style="font-size:30px"></a>
             </div>
         </div>
->>>>>>> Stashed changes
     </div>
     <div id="copyright-container">
         <p>Copyright © 2024 Midnight Coders</p>

@@ -45,16 +45,6 @@ include ("../database/db_connect.php");
                     <input type="submit" value="Maak afspraak" name="add">
                 </form>
             </div>
-<<<<<<< Updated upstream
-            <br>
-            <div class="footxt">
-                <div style="display: flex; justify-content: center;">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4899.554601795917!2d5.266849776508817!3d52.120180671959154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c642613b5a8d0b%3A0x25dde48235d95baf!2sBeukbergenhof%2093%2C%203712%20BX%20Huis%20Ter%20Heide!5e0!3m2!1snl!2snl!4v1718617941142!5m2!1snl!2snl"
-                        width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-=======
 
             <div class="info">
                 <div>
@@ -81,7 +71,6 @@ include ("../database/db_connect.php");
                         met
                         ons opnemen wanneer het u uitkomt. Wij zijn u graag van dienst!
                     </H5>
->>>>>>> Stashed changes
                 </div>
             </div>
     </div>
