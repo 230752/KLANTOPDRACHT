@@ -42,7 +42,6 @@ include ("../database/db_connect.php");
                     <input type="submit" value="Maak afspraak" name="add">
                 </form>
             </div>
-
             <div class="info">
                 <div>
                     <iframe id="google-maps"

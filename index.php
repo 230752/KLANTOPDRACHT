@@ -29,7 +29,7 @@
     <div id="container">
         <?php include ('header.php'); ?>
         <main>
-            <!-- 3 picture slideshow -->
+            <!-- intro && slideshow -->
             <?php include ('assets/php/slideshow.php'); ?>
             <div id="info-box-container">
                 <div class="info-box">
@@ -79,7 +79,7 @@
                 </div>
             </div>
         </main>
-        <?php include("footer.php"); ?>
+        <?php include(BASE_PATH . "/footer.php"); ?>
     </div>
 </body>
 
