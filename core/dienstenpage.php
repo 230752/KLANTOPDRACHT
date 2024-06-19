@@ -14,26 +14,25 @@ include ("../database/db_connect.php");
 </head>
 
 <body>
-
     <div id="container">
         <?php include (BASE_PATH . "/header.php"); ?>
         <main>
             <div class="diensten">
-                <div class="dienst">
-                <img src="/assets/img/icon-tuinontwerp.png" alt="Foto ontwerp">
+                <div class="Tontwerp">
+                    <img src="/assets/img/icon-tuinontwerp.png" alt="Foto ontwerp">
                     <h4>Tuin ontwerp</H4>
                     <p>Een mooie tuin valt of staat bij een goed tuinontwerp.
                         Als het op ontwerpen aankomt, maakt Hendrik Hogendijk het verschil.
                     </p>
                 </div>
-                <div class="dienst">
-                <img src="/assets/img/icon-tuinaanleg.png" alt="Foto aanleg">
+                <div class="Taanleg">
+                    <img src="/assets/img/icon-tuinaanleg.png" alt="Foto aanleg">
                     <h4>Tuin aanleg</h4>
                     <p>
                         Het aanleggen van een tuin doen ik altijd vanuit dezelfde drive: ik wil er iets moois van maken.
                     </p>
                 </div>
-                <div class="dienst">
+                <div class="Tonderhoud">
                     <img src="/assets/img/icon-tuinonderhoud.png" alt="Foto-onderhoud">
                     <H4>Tuin onderhoud</H4>
                     <p>
@@ -42,7 +41,7 @@ include ("../database/db_connect.php");
                         blijft.
                     </p>
                 </div>
-                <div class="dienst">
+                <div class="Zvijvers">
                     <img src="/assets/img/icon-zwemvijvers.png" alt="Foto-vijvers">
                     <H4>Zwem vijvers</H4>
                     <p>
