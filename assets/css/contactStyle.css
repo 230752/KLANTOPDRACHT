@@ -69,3 +69,25 @@ footer a:hover {
   font-family: sans-serif;
   font-size: 1rem;
 }
+
+.info {
+  display: flex;
+}
+
+.info > div {
+  margin: 10px;
+  padding: 20px;
+}
+
+#google-maps {
+  height: 500px;
+  width: 550px;
+  transition: 1s;
+}
+
+@media (max-width: 775px) {
+  #google-maps {
+    height: 300px;
+    width: 300px;
+  }
+}
