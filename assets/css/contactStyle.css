@@ -1,3 +1,6 @@
+form{
+  padding: 15px;
+}
 input[type="text"],
 input[type="mail"],
 select,
