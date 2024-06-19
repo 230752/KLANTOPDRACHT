@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 footer {
   background-color: lightgray;
 }
@@ -73,3 +74,69 @@ footer {
   display: flex;
   justify-content: center;
 }
+=======
+footer {
+  background-color: lightgray;
+}
+
+#footer-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+
+.footer-title {
+  font-size: 1.5rem;
+  padding: 0;
+}
+
+#adres-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#tel-text {
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 3rem;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .fa:hover {
+    opacity: 0.3;
+  }
+  
+  .fa-instagram {
+    color: red;
+  }
+  
+  .fa-facebook {
+    color: #3B5998;
+  }
+  
+  .fa-twitter {
+    color: #55ACEE;
+  }
+  
+  #copyright-container {
+    display: flex;
+    justify-content: center;
+    color: black;
+  }
+>>>>>>> Stashed changes
