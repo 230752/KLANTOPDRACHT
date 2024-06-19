@@ -19,7 +19,7 @@ function prettyDump($var) {
     echo "</pre>";
 }
 
-define("BASEURL", "http://localhost/"); 
+define("BASEURL", "http://localhost/");
 define("BASE_PATH", "C:/xampp/htdocs");
 
 if(!isset($_SESSION['login'])) {

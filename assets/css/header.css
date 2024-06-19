@@ -36,7 +36,7 @@ header {
 }
 
 #header-logo {
-  width: 400px;
+  width: 350px;
   transition: width 1s;
 }
 
@@ -111,12 +111,6 @@ header {
 
 .menu-link:hover {
   opacity: 0.3;
-}
-
-@media (max-width: 940px) {
-  #header-logo {
-    width: 300px;
-  }
 }
 
 @media (max-width: 750px) {
