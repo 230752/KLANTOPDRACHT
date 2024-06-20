@@ -7,22 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hendrik Hovenier</title>
     <!-- favicon -->
-    <link rel="icon" href="<?=BASEURL?>assets/img/weblogo.ico">
+    <link rel="icon" href="<?= BASEURL ?>assets/img/weblogo.ico">
     <!-- header CSS -->
-    <link rel="stylesheet" href="<?=BASEURL?>assets/css/header.css">
+    <link rel="stylesheet" href="<?= BASEURL ?>assets/css/header.css">
     <!-- main CSS -->
-    <link rel="stylesheet" href="<?=BASEURL?>assets/css/indexStyle.css">
+    <link rel="stylesheet" href="<?= BASEURL ?>assets/css/indexStyle.css">
     <!-- footer CSS -->
-     <link rel="stylesheet" href="<?=BASEURL?>assets/css/footer.css">
+    <link rel="stylesheet" href="<?= BASEURL ?>assets/css/footer.css">
     <!-- menu JS -->
-     <script src="<?=BASEURL?>assets/js/header.js"></script>
+    <script src="<?= BASEURL ?>assets/js/header.js"></script>
     <!-- font -->
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- social media icons -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -79,7 +76,7 @@
                 </div>
             </div>
         </main>
-        <?php include(BASE_PATH . "/footer.php"); ?>
+        <?php include (BASE_PATH . "/footer.php"); ?>
     </div>
 </body>
 
