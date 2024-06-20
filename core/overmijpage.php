@@ -14,14 +14,18 @@ include ("../database/db_connect.php");
 </head>
 
 <body>
-    <div id="container">
-        <?php include (BASE_PATH . "/header.php"); ?>
-        <main>
+    <?php include (BASE_PATH . "/header.php"); ?>
+    <main>
+        <div class="mepage">
             <div class="selfie">
                 <img src="/assets/img/Hendrik_foto.png" alt="Selfie Hendrik">
             </div>
-        </main>
-        <?php include (BASE_PATH . "/footer.php"); ?>
-    </div>
-
+            <div class="metext">
+                
+            </div>
+        </div>
+    </main>
+    <?php include (BASE_PATH . "/footer.php"); ?>
 </body>
+
+</html>

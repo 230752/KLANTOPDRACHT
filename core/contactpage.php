@@ -51,6 +51,9 @@ include ("../database/db_connect.php");
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4899.554601795917!2d5.266849776508817!3d52.120180671959154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c642613b5a8d0b%3A0x25dde48235d95baf!2sBeukbergenhof%2093%2C%203712%20BX%20Huis%20Ter%20Heide!5e0!3m2!1snl!2snl!4v1718619485389!5m2!1snl!2snl"
                         allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
+                    <H3>
+                        Openingstijden
+                    </H3>
                     <H4>
                         Maandag - Vrijdag: 07.00 - 17.00 uur
                         <br>
