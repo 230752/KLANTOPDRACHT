@@ -1,10 +1,22 @@
-.mepage{
-    padding: 15px;
-}
-.selfie > img{
-width: 150px;
+.mepage {
+  padding: 15px;
+  font-family: sans-serif;
 }
 
-.metext{
+H1 {
+  display: flex;
+  justify-content: center;
+}
 
+.metext {
+  text-align: center;
+}
+
+.selfie > img {
+  width: 175px;
+}
+
+.intro > H3, p{
+  display: flex;
+  justify-content: center;
 }

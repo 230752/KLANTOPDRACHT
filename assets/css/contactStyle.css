@@ -1,5 +1,6 @@
 .fpage {
   display: flex;
+  font-family: sans-serif;
 }
 
 .fpage > div {
