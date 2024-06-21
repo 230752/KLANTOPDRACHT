@@ -17,15 +17,20 @@ include ("../database/db_connect.php");
     <?php include (BASE_PATH . "/header.php"); ?>
     <main>
         <div class="mepage">
-            <H1>Hovenier Hogendijk</H1>
+            <H1>Over mij</H1>
             <div class="metext">
                 <div class="selfie">
                     <img src="/assets/img/Hendrik_foto.png" alt="Selfie Hendrik">
                 </div>
             </div>
             <div class="intro">
+                <H2>Hovenier Hogendijk</H2>
                 <H3>Hier bij Hendrik Hovenier vind je de beste voor jouw tuin!</H3>
-                <p>We zijn bereikbaar in regio's: Zeist en De Bilt</p>
+                <p> 
+                    Ik ben Hendrik Hogendijk
+                    <br>
+                    We zijn bereikbaar in regio's Zeist en De Bilt
+                </p>
             </div>
         </div>
     </main>
