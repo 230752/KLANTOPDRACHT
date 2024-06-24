@@ -16,7 +16,18 @@ H1 {
   width: 175px;
 }
 
-.intro > H2, H3, p{
+.intro > H3, H4{
   display: flex;
   justify-content: center;
+}
+
+.intro-text{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.intro-text > p{
+  width: 600px;
+  word-wrap: normal;
 }

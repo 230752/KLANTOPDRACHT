@@ -15,7 +15,6 @@ include ("../database/db_connect.php");
 
 <body>
     <?php include (BASE_PATH . "/header.php"); ?>
-
     <main>
         <div class="fpage">
             <div>

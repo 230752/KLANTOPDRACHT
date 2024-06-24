@@ -34,30 +34,30 @@ footer {
 }
 
 .fa {
-    padding: 10px;
-    font-size: 3rem;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-  }
-  
-  .fa:hover {
-    opacity: 0.3;
-  }
-  
-  .fa-instagram {
-    color: red;
-  }
-  
-  .fa-facebook {
-    color: #3B5998;
-  }
-  
-  .fa-twitter {
-    color: #55ACEE;
-  }
-  
-  #copyright-container {
-    display: flex;
-    justify-content: center;
-  }
+  padding: 10px;
+  font-size: 3rem;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.3;
+}
+
+.fa-instagram {
+  color: red;
+}
+
+.fa-facebook {
+  color: #3b5998;
+}
+
+.fa-twitter {
+  color: #55acee;
+}
+
+#copyright-container {
+  display: flex;
+  justify-content: center;
+}
