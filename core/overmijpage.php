@@ -17,16 +17,16 @@ include ("../database/db_connect.php");
     <?php include (BASE_PATH . "/header.php"); ?>
     <main>
         <div class="mepage">
-            <H1>Over mij</H1>
-            <div class="metext">
-                <div class="selfie">
-                    <img src="/assets/img/Hendrik_foto.png" alt="Selfie Hendrik">
+            <div class="intro" id="intro-id">
+                <H1>Over mij</H1>
+                <div class="metext">
+                    <div class="selfie">
+                        <img src="/assets/img/Hendrik_foto.png" alt="Selfie Hendrik">
+                    </div>
                 </div>
-            </div>
-            <div class="intro">
                 <H3>Hovenier Hogendijk</H3>
                 <H4>Hier bij Hendrik Hovenier vind je de beste voor jouw tuin!</H4>
-                <div class="intro-text">
+                <div class="intro-text" id="text-id">
                     <p>
                         Na zijn opleiding werkte Johan jarenlang voor verschillende hoveniersbedrijven. Hij leerde veel
                         over tuinontwerp, plantkunde en de beste technieken voor het onderhouden van verschillende
