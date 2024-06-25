@@ -28,19 +28,16 @@ include ("../database/db_connect.php");
                 <H4>Hier bij Hendrik Hovenier vind je de beste voor jouw tuin!</H4>
                 <div class="intro-text" id="text-id">
                     <p>
-                        Na zijn opleiding werkte Johan jarenlang voor verschillende hoveniersbedrijven. Hij leerde veel
+                        Na mijn opleiding werkte ik jarenlang voor verschillende hoveniersbedrijven. Ik leerde veel
                         over tuinontwerp, plantkunde en de beste technieken voor het onderhouden van verschillende
                         soorten
-                        tuinen. Maar na verloop van tijd begon hij zich te realiseren dat hij zijn eigen ideeën en visie
+                        tuinen. Maar na verloop van tijd begon ik zich te realiseren dat ik mijn eigen ideeën en visie
                         had over hoe een tuin eruit zou moeten zien en hoe klanten het beste bediend konden worden.
                     </p>
                     <p>
-                        Op een zonnige lenteochtend, terwijl Johan bezig was met het aanleggen van een prachtige
-                        bloementuin, kreeg hij een ingeving. Waarom zou hij zijn dromen en ideeën niet omzetten in een
-                        eigen bedrijf?
-                        Hij wilde een bedrijf starten waar hij zijn creativiteit de vrije loop kon laten, waar hij
-                        zijn passie voor tuinen kon delen met anderen en waar hij klanten kon helpen om hun tuindromen
-                        te verwezenlijken.
+                        Gevorderd in:
+                        <br>
+                        aanleg & onderhoud, plantenkennis, arbo & veiligheid en bodemkunde.
                     </p>
                 </div>
             </div>
