@@ -20,6 +20,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- social media icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        if (window.history.replaceState) {
+            window.history.replaceState(null, null, window.location.href);
+        }
+    </script>
 </head>
 
 <body>
@@ -57,22 +65,35 @@
                 </div>
             </div>
             <div id="service-container">
-                <div id="service-box">
+                <div class="service-box">
                     <h2>Ontwerp</h2>
                     <img class="service-box-img" src="assets/img/placeholder.svg" alt="garden">
                 </div>
-                <div id="service-box">
+                <div class="service-box">
                     <h2>Aanleg</h2>
                     <img class="service-box-img" src="assets/img/placeholder.svg" alt="garden">
                 </div>
-                <div id="service-box">
+                <div class="service-box">
                     <h2>Onderhoud</h2>
                     <img class="service-box-img" src="assets/img/placeholder.svg" alt="garden">
                 </div>
             </div>
             <div id="review-container">
-                <div class="review-box">
-
+                <h1>RECENSIES</h1>
+                <div id="review-box-container">
+                    <?php
+                    $sqli_prepare = $con->prepare("SELECT naam, bericht FROM recensies WHERE zichtbaar = 1 ORDER BY RAND() LIMIT 3;");
+                    $sqli_prepare->bind_result($reviewName, $reviewMessage);
+                    $sqli_prepare->execute();
+                    while ($sqli_prepare->fetch()) { ?>
+                        <div class="review-box">
+                            <p class="review-name"><?php echo $reviewName ?></p>
+                            <p class="review-text"><?php echo $reviewMessage ?></p>
+                        </div>
+                    <?php } ?>
+                </div>
+                <div id="review-input-box">
+                    <button id="review-btn">Schrijf een recensie</button>
                 </div>
             </div>
         </main>

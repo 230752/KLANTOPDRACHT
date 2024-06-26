@@ -1,7 +1,7 @@
 <?php 
 include ('../database/db_connect.php');
 $sqli_prepare = $con->prepare("SELECT gebruikersnaam, wachtwoord FROM admin;");
-$sqli_prepare->bind_result($gebruikersnaam, $wachtwoord);
+$sqli_prepare->bind_result($username, $password);
 $sqli_prepare->execute();
 $sqli_prepare->fetch();
 $sqli_prepare->close();
@@ -9,7 +9,7 @@ $sqli_prepare->close();
 $wronglogin = false;
 
 if(isset($_POST['login'])) {
-    if($gebruikersnaam == $_POST['gebruikersnaam'] && $wachtwoord == $_POST['wachtwoord']) {
+    if($username == $_POST['username'] && $password == $_POST['password']) {
         $_SESSION['login'] = true;
     } else {
         $wronglogin = true;
@@ -17,7 +17,7 @@ if(isset($_POST['login'])) {
 }
 
 if ($_SESSION['login'] == true) {
-    header('location: overzicht.php');
+    header('location: overview.php');
     exit;
 }
 ?>
@@ -28,7 +28,7 @@ if ($_SESSION['login'] == true) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/index.css">
     <script>
         if (window.history.replaceState) {
             window.history.replaceState(null, null, window.location.href);
@@ -48,8 +48,8 @@ if ($_SESSION['login'] == true) {
             <div id="input-container">
                  <!-- gb = Hendrik en ww = Hogendijk -->
                 <form id="login-form" method="post">
-                    <input class="login-input" type="text" name="gebruikersnaam" placeholder="Gebruikersnaam..." required>
-                    <input class="login-input" type="password" name="wachtwoord" placeholder="Wachtwoord..." required>
+                    <input class="login-input" type="text" name="username" placeholder="Gebruikersnaam..." required>
+                    <input class="login-input" type="password" name="password" placeholder="Wachtwoord..." required>
                     <?php if($wronglogin == true) {
                         echo "<p id='login-text'>Onjuiste gegevens</p>";
                     }

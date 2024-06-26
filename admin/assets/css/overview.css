@@ -1,0 +1,81 @@
+main {
+    padding: 20px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.box {
+    width: 300px;
+    max-height: 400px;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    padding: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.7); /* Optional: adds some shadow for better visibility */
+}
+
+.label {
+    font-size: 1.2rem;
+    max-width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#delete-btn {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#delete-btn:hover {
+    background-color: #a50000;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#link-btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.link-btn {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 2rem;
+    background-color: #32a830;
+    color: white;
+    cursor: pointer;
+}
+
+.link-btn:hover {
+    background-color: green;
+}

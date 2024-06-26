@@ -1,0 +1,68 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+label {
+  font-size: 1.5rem;
+}
+
+.input {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 5px;
+}
+
+#desc-input {
+  min-width: 295px;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 5px;
+}
+
+#edit-btn {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+  background-color: #32a830;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+#edit-btn:hover {
+  background-color: green;
+}
+
+#delete-center {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+#delete-btn {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+}
+
+#delete-btn:hover {
+  background-color: #a50000;
+}
