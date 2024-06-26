@@ -20,7 +20,7 @@ include ("../database/db_connect.php");
             <div>
                 <H1>Contact Formulier</H1>
                 <div class="contactform">
-                    <form action="overmijpage.php" method="post">
+                    <form action="afspraakpage.php" method="post">
 
                         <label for="vnaam">Voornaam</label>
                         <input type="text" id="vnaam" name="vnaam" placeholder="Uw voornaam.." required>
