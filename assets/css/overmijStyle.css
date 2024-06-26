@@ -23,6 +23,7 @@ H1 {
 .text-flexboxes {
   display: flex;
   justify-content: center;
+  gap: 10px;
 }
 
 .intro-text > p {
@@ -32,17 +33,24 @@ H1 {
 
 .diploma > img {
   padding-top: 15px;
+  padding-bottom: 15px;
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 250px;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 660px) {
+  .mepage{
+    padding: 5px;
+  }
+
   .text-flexboxes {
     display: flex;
     flex-direction: column;
-    width: 75%;
   }
 
+  .intro-text{
+    word-break: normal;
+  }
 }
