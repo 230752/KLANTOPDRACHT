@@ -17,29 +17,43 @@ include ("../database/db_connect.php");
     <?php include (BASE_PATH . "/header.php"); ?>
     <main>
         <div class="mepage">
-            <div class="intro" id="intro-id">
-                <H1>Over mij</H1>
-                <div class="metext">
-                    <div class="selfie">
-                        <img src="/assets/img/Hendrik_foto.png" alt="Selfie Hendrik">
-                    </div>
+            <H1>Over mij</H1>
+            <div class="metext">
+                <div class="selfie">
+                    <img src="/assets/img/Hendrik_foto.png" alt="Selfie Hendrik">
                 </div>
+            </div>
+            <div class="h-text">
                 <H3>Hovenier Hogendijk</H3>
                 <H4>Hier bij Hendrik Hovenier vind je de beste voor jouw tuin!</H4>
-                <div class="intro-text" id="text-id">
-                    <p>
-                        Na mijn opleiding werkte ik jarenlang voor verschillende hoveniersbedrijven. Ik leerde veel
-                        over tuinontwerp, plantkunde en de beste technieken voor het onderhouden van verschillende
-                        soorten
-                        tuinen. Maar na verloop van tijd begon ik zich te realiseren dat ik mijn eigen ideeën en visie
-                        had over hoe een tuin eruit zou moeten zien en hoe klanten het beste bediend konden worden.
-                    </p>
-                    <p>
-                        Gevorderd in:
+            </div>
+            <div class="text-flexboxes">
+                <div class="intro-text">
+                    <p id="mij-text">
+                        Na mijn opleiding werkte ik jarenlang voor verschillende hoveniersbedrijven. <br>
+                        Ik leerde veel over tuinontwerp, plantkunde en de beste technieken voor <br>
+                        het onderhouden van verschillende soorten tuinen. <br>
                         <br>
-                        aanleg & onderhoud, plantenkennis, arbo & veiligheid en bodemkunde.
+                        Maar na verloop van tijd begon ik zich te realiseren dat ik mijn eigen ideeën <br>
+                        en visie had over hoe een tuin eruit zou moeten zien en hoe klanten <br>
+                        het beste bediend konden worden.
                     </p>
                 </div>
+                <div class="intro-text">
+                    <p id="skills-text">
+                        Gevorderd in:
+                        <br>
+                        <br>
+                        aanleg & onderhoud,
+                        <br>
+                        plantenkennis,
+                        <br>
+                        arbo & veiligheid en bodemkunde.
+                    </p>
+                </div>
+            </div>
+            <div class="diploma">
+                <img src="/assets/img/diploma Hendrik.png" alt="mijn diploma">
             </div>
         </div>
     </main>

@@ -16,18 +16,33 @@ H1 {
   width: 175px;
 }
 
-.intro > H3, H4{
+.h-text {
+  text-align: center;
+}
+
+.text-flexboxes {
   display: flex;
   justify-content: center;
 }
 
-.intro-text{
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-.intro-text > p{
+.intro-text > p {
   width: 600px;
   word-wrap: normal;
+}
+
+.diploma > img {
+  padding-top: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+}
+
+@media (max-width: 650px) {
+  .text-flexboxes {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+  }
+
 }
