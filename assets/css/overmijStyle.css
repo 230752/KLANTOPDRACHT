@@ -1,3 +1,48 @@
-.selfie > img{
-width: 150px;
+.mepage {
+  padding: 15px;
+  font-family: sans-serif;
+}
+
+H1 {
+  display: flex;
+  justify-content: center;
+}
+
+.metext {
+  text-align: center;
+}
+
+.selfie > img {
+  width: 175px;
+}
+
+.h-text {
+  text-align: center;
+}
+
+.text-flexboxes {
+  display: flex;
+  justify-content: center;
+}
+
+.intro-text > p {
+  width: 600px;
+  word-wrap: normal;
+}
+
+.diploma > img {
+  padding-top: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+}
+
+@media (max-width: 650px) {
+  .text-flexboxes {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+  }
+
 }

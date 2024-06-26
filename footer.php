@@ -1,8 +1,14 @@
+<head>
+    <!-- social media icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 <footer>
     <div id="footer-content">
         <div id="adres-container">
             <p class="footer-title">Adress</p>
             <p id="addres-text">Hoefstraat 42 <br>7143HH Huis Ter Heide</p>
+            <p id="regio">We zijn bereikbaar in regio's Zeist en De Bilt</p>
         </div>
         <div id="contact-container">
             <p class="footer-title">Contact</p>
