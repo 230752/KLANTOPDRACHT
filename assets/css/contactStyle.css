@@ -70,6 +70,8 @@ textarea {
   height: 500px;
   width: 550px;
   transition: 1s;
+  border: none;
+  border-radius: 5px;
 }
 
 .info {

@@ -54,7 +54,7 @@ if ($_SESSION['login'] == true) {
                         echo "<p id='login-text'>Onjuiste gegevens</p>";
                     }
                     ?>
-                    <input id="login-submit" type="submit" name="login">
+                    <input id="login-submit" type="submit" name="login" value="Log in">
                 </form>
             </div>
         </main>

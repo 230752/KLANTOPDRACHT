@@ -60,17 +60,11 @@ header {
 #contact-btn {
   text-decoration: none;
   font-size: 1rem;
-  color: white;
-  background-color: #32a830;
-  padding: 12px 20px;
-  border-radius: 10px;
+  color: black;
   transition: font-size 1s, transform 0.3s ease-in-out;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 #contact-btn:hover {
-  background-color: green;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transform: translateY(-3px);
 }
 

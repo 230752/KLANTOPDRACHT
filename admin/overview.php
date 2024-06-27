@@ -98,7 +98,7 @@ if (isset($_POST['delete-review'])) {
         } else { ?>
                         <div id="home">
                             <h1>Welkom</h1>
-                        <?php if (isset($_POST['delete-order']) || isset($_POST['delete-review'])) {
+                        <?php if (isset($_POST['delete-contact']) || isset($_POST['delete-review'])) {
                             echo "<p style='color: red;'>VERWIJDERED</p>";
                         } ?>
                             <p>Kies hier onder wat u wilt zien</p>

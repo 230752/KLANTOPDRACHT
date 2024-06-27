@@ -12,10 +12,6 @@ H1 {
   text-align: center;
 }
 
-#mij-text {
-  max-width: 650px;
-}
-
 .selfie > img {
   width: 175px;
 }
@@ -45,32 +41,16 @@ H1 {
 }
 
 @media (max-width: 660px) {
-  .mepage {
+  .mepage{
     padding: 5px;
-    display: flex;
-    flex-direction: column;
   }
 
   .text-flexboxes {
-    word-break: normal;
-    max-width: 200px;
     display: flex;
     flex-direction: column;
   }
 
-  .intro-text > p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    text-align: center;
-  }
-
-  #mij-text {
-    width: 365px;
-  }
-
-  #skills-text {
-    width: 360px;
+  .intro-text{
+    word-break: normal;
   }
 }

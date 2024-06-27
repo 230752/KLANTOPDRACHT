@@ -6,12 +6,12 @@ footer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  flex-direction: row;
 }
 
 .footer-title {
   font-size: 1.5rem;
   padding: 0;
+  border-bottom: 1px solid black;
 }
 
 #adres-container {
@@ -34,12 +34,23 @@ footer {
   font-weight: bolder;
 }
 
+#social-links {
+  display: flex;
+  flex-direction: row;
+}
+
 .fa {
   padding: 10px;
   font-size: 3rem;
   width: 50px;
   text-align: center;
   text-decoration: none;
+}
+
+@media (max-width: 470px) {
+  .fa {
+    padding-bottom: 27px;
+  }
 }
 
 .fa:hover {

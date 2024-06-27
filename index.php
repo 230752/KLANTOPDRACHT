@@ -1,7 +1,7 @@
-<?php 
+<?php
 include ('database/db_connect.php');
 
-if(isset($_POST['add-rev'])) {
+if (isset($_POST['add-rev'])) {
     $datum = date('Y-m-d H:i:s');
     $voornaam = $_POST['voornaam'];
     $achternaam = $_POST['achternaam'];
@@ -14,7 +14,7 @@ if(isset($_POST['add-rev'])) {
 }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
@@ -48,34 +48,39 @@ if(isset($_POST['add-rev'])) {
     <div id="container">
         <?php include ('header.php'); ?>
         <main>
+            <img src="assets/img/background.png" alt="bckgrnd" id="background-img">
             <!-- intro && slideshow -->
             <?php include ('assets/php/slideshow.php'); ?>
-            <div id="info-box-container">
-                <div class="info-box">
-                    <h2 class="info-box-title">Onderdeel</h2>
-                    <img class="info-box-img" src="assets/img/ontwerp.png" alt="garden">
-                    <p>
-                        Ik maak de tuin onderdeel van jouw ‘thuis’, door hem volledig op jouw wensen af te stemmen.
-                    </p>
-                </div>
-                <div class="info-box">
-                    <h2 class="info-box-title">Producten</h2>
-                    <img class="info-box-img" src="assets/img/products.png" alt="garden">
-                    <p>
-                        Met behulp van mooie, natuurlijke en duurzame producten en materialen creëer ik een tuin, die
-                        garant
-                        staat voor een jarenlang plezierig buitenleven.
-                    </p>
-                </div>
-                <div class="info-box">
-                    <h2 class="info-box-title">Mogelijkheden</h2>
-                    <img class="info-box-img" src="assets/img/posibilities.png" alt="garden">
-                    <p>
-                        Van een knusse veranda en een mooie vijver, tot een gezellig terras en een kleurrijke
-                        bloemenborder:
-                        ik
-                        stop al mijn energie erin.
-                    </p>
+            <div id="info-container">
+                <h1 style="text-align: center">Waarom Hendrik Hovenier?</h1>
+                <div id="info-box-container">
+                    <div class="info-box">
+                        <h2 class="info-box-title">Onderdeel</h2>
+                        <img class="info-box-img" src="assets/img/ontwerp.png" alt="garden">
+                        <p>
+                            Ik maak de tuin onderdeel van jouw ‘thuis’, door hem volledig op jouw wensen af te stemmen.
+                        </p>
+                    </div>
+                    <div class="info-box">
+                        <h2 class="info-box-title">Producten</h2>
+                        <img class="info-box-img" src="assets/img/products.png" alt="garden">
+                        <p>
+                            Met behulp van mooie, natuurlijke en duurzame producten en materialen creëer ik een tuin,
+                            die
+                            garant
+                            staat voor een jarenlang plezierig buitenleven.
+                        </p>
+                    </div>
+                    <div class="info-box">
+                        <h2 class="info-box-title">Mogelijkheden</h2>
+                        <img class="info-box-img" src="assets/img/posibilities.png" alt="garden">
+                        <p>
+                            Van een knusse veranda en een mooie vijver, tot een gezellig terras en een kleurrijke
+                            bloemenborder:
+                            ik
+                            stop al mijn energie erin.
+                        </p>
+                    </div>
                 </div>
             </div>
             <div id="review-container">

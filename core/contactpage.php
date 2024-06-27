@@ -44,7 +44,7 @@ if (isset($_POST['add'])) {
                         <?php if (isset($_POST['add'])) {
                             echo "<p style='color: green'>UW FORMULIER IS VERSTUURD!</p>";
                         } ?>
-                        <form method="post" method="post">
+                        <form method="post">
 
                             <label for="vnaam">Voornaam</label>
                             <input type="text" id="vnaam" name="vnaam" placeholder="Uw voornaam.." required>
@@ -56,7 +56,7 @@ if (isset($_POST['add'])) {
                             <input type="text" id="adres" name="adres" placeholder="Uw adres.." required>
 
                             <label for="telnummer">Telefoonnummer</label>
-                            <input type="number" id="telnummer" name="telnum" placeholder="Uw telefoon nummer.." min="1"
+                            <input type="number" id="telnummer" name="telnum" placeholder="Uw telefoonnummer.." min="1"
                                 required>
 
                             <label for="email">E-mail</label>
@@ -66,7 +66,7 @@ if (isset($_POST['add'])) {
                             <textarea id="subject" name="opmrk" placeholder="Schrijf hier.." rows="4"
                                 cols="50"></textarea>
 
-                            <input type="submit" value="Verzend" name="add">
+                            <input type="submit" value="Maak afspraak" name="add">
                         </form>
                     </div>
                 </div>
