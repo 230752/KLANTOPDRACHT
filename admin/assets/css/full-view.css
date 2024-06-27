@@ -33,11 +33,11 @@ label {
 #edit-btn {
   text-decoration: none;
   color: white;
-  font-size: 1.3rem;
+  font-size: 2rem;
   background-color: #32a830;
   border: none;
   border-radius: 5px;
-  padding: 10px 15px;
+  padding: 10px 30px;
   cursor: pointer;
 }
 
@@ -54,11 +54,11 @@ label {
 #delete-btn {
   text-decoration: none;
   color: white;
-  font-size: 1.3rem;
+  font-size: 2rem;
   background-color: red;
   border: none;
   border-radius: 5px;
-  padding: 10px;
+  padding: 10px 25px;
   cursor: pointer;
   display: flex;
 }
