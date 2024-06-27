@@ -20,7 +20,7 @@ include ("../database/db_connect.php");
             <div>
                 <H1>Contact Formulier</H1>
                 <div class="contactform">
-                    <form action="afspraakpage.php" method="post">
+                    <form action="contactpage.php" method="post">
 
                         <label for="vnaam">Voornaam</label>
                         <input type="text" id="vnaam" name="vnaam" placeholder="Uw voornaam.." required>
@@ -32,10 +32,10 @@ include ("../database/db_connect.php");
                         <input type="text" id="adres" name="adres" placeholder="Uw adres.." required>
 
                         <label for="telnummer">Telefoon nummer</label>
-                        <input type="text" id="telnummer" name="telnum" placeholder="Uw telefoon nummer.." required>
+                        <input type="number" id="telnummer" name="telnum" placeholder="Uw telefoon nummer.." min="1" required>
 
                         <label for="email">E-mail</label>
-                        <input type="text" id="email" name="email" placeholder="Uw e-mail.." required>
+                        <input type="email" id="email" name="email" placeholder="Uw e-mail.." required>
 
                         <label for="subject">Vraag/Opmerking</label>
                         <textarea id="subject" name="opmrk" placeholder="Schrijf hier.." rows="4" cols="50"></textarea>

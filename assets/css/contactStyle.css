@@ -13,8 +13,15 @@ form {
   width: 750px;
 }
 
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 input[type="text"],
-input[type="mail"],
+input[type="email"],
+input[type="number"],
 select,
 textarea {
   width: 100%;
@@ -71,7 +78,7 @@ textarea {
 
 @media (max-width: 815px) {
   form {
-    width: 100%;
+    width: 95%;
     margin-top: 0;
   }
 
