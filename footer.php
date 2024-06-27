@@ -6,7 +6,7 @@
 <footer>
     <div id="footer-content">
         <div id="adres-container">
-            <p class="footer-title">Adress</p>
+            <p class="footer-title">Adres</p>
             <p id="addres-text">Hoefstraat 42 <br>7143HH Huis Ter Heide</p>
             <p id="regio">We zijn bereikbaar in regio's Zeist en De Bilt</p>
         </div>

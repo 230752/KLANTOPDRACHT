@@ -78,20 +78,6 @@ if(isset($_POST['add-rev'])) {
                     </p>
                 </div>
             </div>
-            <!-- <div id="service-container">
-                <div class="service-box">
-                    <h2>Ontwerp</h2>
-                    <img class="service-box-img" src="assets/img/placeholder.svg" alt="garden">
-                </div>
-                <div class="service-box">
-                    <h2>Aanleg</h2>
-                    <img class="service-box-img" src="assets/img/placeholder.svg" alt="garden">
-                </div>
-                <div class="service-box">
-                    <h2>Onderhoud</h2>
-                    <img class="service-box-img" src="assets/img/placeholder.svg" alt="garden">
-                </div>
-            </div> -->
             <div id="review-container">
                 <h1>RECENSIES</h1>
                 <div id="review-box-container">
