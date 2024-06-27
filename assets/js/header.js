@@ -7,6 +7,15 @@ function showMenu() {
   }
 }
 
+function showReviewInput() {
+  let r = document.getElementById("review-overlay");
+  if (r.style.display === "none") {
+    r.style.display = "block";
+  } else {
+    r.style.display = "none";
+  }
+}
+
 function handleResize() {
   let x = document.getElementById("menu-overlay");
   if (window.innerWidth > 440) {

@@ -13,7 +13,7 @@
         <div id="contact-container">
             <p class="footer-title">Contact</p>
             <a href="tel:061234567">061234567</a>
-            <p><a href="mailto:HendrikHogendijk@gmail.com">hendrikhogendijkhoveniers@gmail.com</a></p>
+            <p><a href="mailto:HendrikHogendijk@gmail.com">email</a></p>
             <div id="social-links">
                 <a href="#" class="fa fa-instagram" style="font-size:30px"></a>
                 <a href="#" class="fa fa-facebook" style="font-size:30px"></a>

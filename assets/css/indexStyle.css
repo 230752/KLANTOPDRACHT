@@ -131,12 +131,14 @@ main div {
 #info-box-container {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   gap: 15px;
 }
 
 .info-box {
-  width: 30%;
-  border-radius: 10px;
+  width: 50%;
+  border-radius: 2px;
   box-shadow: 0px 3px 10px 3px lightgray;
   padding: 10px;
   display: flex;
@@ -147,16 +149,10 @@ main div {
 }
 
 .info-box-img {
-  width: 70%;
+  width: 50%;
 }
 
 @media (max-width: 1000px) {
-  #info-box-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
   .info-box {
     width: 80%;
   }
@@ -176,7 +172,7 @@ main div {
 }
 
 .service-box-img {
-  width: 50%;
+  max-width: 50%;
 }
 
 #review-container {
@@ -233,4 +229,70 @@ main div {
 #review-btn:hover {
   background-color: green;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#review-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 999;
+}
+
+#close-review-btn {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-size: 2.5rem;
+}
+
+#review-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.input-name {
+  font-size: 2rem;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#desc-input {
+  font-size: 2rem;
+  border-radius: 5px;
+  border: 2px solid black;
+  padding: 10px;
+  min-width: 390px;
+  max-width: 1000px;
+}
+
+#submit-btn {
+  font-size: 1.3rem;
+  color: white;
+  background-color: #32a830;
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+#submit-btn:hover {
+  background-color: green;
+}
+
+@media (max-width: 500px) {
+  .input-name {
+    font-size: 1.5rem;
+  }
+  #desc-input {
+    font-size: 1.5rem;
+    min-width: 290px;
+  }
 }

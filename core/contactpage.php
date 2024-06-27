@@ -1,5 +1,19 @@
 <?php
 include ("../database/db_connect.php");
+
+if(isset($_POST['add'])) {
+    $datum = date('Y-m-d H:i:s');
+    $voornaam = $_POST['vnaam'];
+    $achternaam = $_POST['anaam'];
+    $adres = $_POST['adres'];
+    $telefoonnummer = $_POST['telnum'];
+    $email = $_POST['email'];
+    $opmerking = $_POST['opmrk'];
+    $sqli_prepare = $con->prepare("INSERT INTO opdrachten(datum, voornaam, achternaam, adres, telefoonnummer, email, opmerking) VALUES(?,?,?,?,?,?,?);");
+    $sqli_prepare->bind_param("ssssiss", $datum, $voornaam, $achternaam, $adres, $telefoonnummer, $email, $opmerking);
+    $sqli_prepare->execute();
+    $sqli_prepare->close();
+}
 ?>
 
 <!DOCTYPE html>
@@ -11,6 +25,12 @@ include ("../database/db_connect.php");
     <link rel="stylesheet" href="<?= BASEURL ?>assets/css/contactStyle.css">
     <link rel="stylesheet" href="<?= BASEURL ?>assets/css/header.css">
     <link rel="stylesheet" href="<?= BASEURL ?>assets/css/footer.css">
+    <script src="<?= BASEURL ?>assets/js/header.js"></script>
+    <script>
+        if (window.history.replaceState) {
+            window.history.replaceState(null, null, window.location.href);
+        }
+    </script>
 </head>
 
 <body>
@@ -20,7 +40,8 @@ include ("../database/db_connect.php");
             <div>
                 <H1>Contact Formulier</H1>
                 <div class="contactform">
-                    <form action="overmijpage.php" method="post">
+                <?php if(isset($_POST['add'])) { echo "<p style='color: green'>UW FORMULIER IS VERSTUURD!</p>";} ?>
+                    <form method="post" method="post">
 
                         <label for="vnaam">Voornaam</label>
                         <input type="text" id="vnaam" name="vnaam" placeholder="Uw voornaam.." required>

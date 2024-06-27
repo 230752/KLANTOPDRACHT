@@ -11,6 +11,7 @@ include ("../database/db_connect.php");
     <link rel="stylesheet" href="<?= BASEURL ?>assets/css/overmijStyle.css">
     <link rel="stylesheet" href="<?= BASEURL ?>assets/css/header.css">
     <link rel="stylesheet" href="<?= BASEURL ?>assets/css/footer.css">
+    <script src="<?= BASEURL ?>assets/js/header.js"></script>
 </head>
 
 <body>
