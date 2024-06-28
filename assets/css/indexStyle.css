@@ -309,6 +309,7 @@ main div {
   padding: 10px;
   min-width: 390px;
   max-width: 1000px;
+  resize: none;
 }
 
 #submit-btn {
