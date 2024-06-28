@@ -52,31 +52,31 @@ if (isset($_POST['edit'])) {
 </head>
 
 <body>
-    <header>
-        <a id="return-btn" href="overview.php">Ga terug</a>
-        <form method="post">
-            <button id="log-out-btn" name="log-out">Log uit</button>
-        </form>
-    </header>
-    <main>
-        <h1>Recensie:</h1>
-        <?php
-        $sqli_prepare = $con->prepare("SELECT * FROM recensies WHERE id = $_GET[id];");
-        $sqli_prepare->bind_result($id, $datum, $voornaam, $achternaam, $bericht, $zichtbaar);
-        $sqli_prepare->execute(); ?>
-        <div id="container">
+    <div id="container">
+        <header>
+            <a id="return-btn" href="overview.php">Ga terug</a>
+            <form method="post">
+                <button id="log-out-btn" name="log-out">Log uit</button>
+            </form>
+        </header>
+        <main>
+            <h1>Recensie:</h1>
+            <?php
+            $sqli_prepare = $con->prepare("SELECT * FROM recensies WHERE id = $_GET[id];");
+            $sqli_prepare->bind_result($id, $datum, $voornaam, $achternaam, $bericht, $zichtbaar);
+            $sqli_prepare->execute(); ?>
             <?php while ($sqli_prepare->fetch()) { ?>
                 <form id="info" method="POST">
                     <h2>ID: <?php echo $id ?></h2>
-                    <label for="name">Voornaam:</label>
-                    <input class="input" type="text" name="voornaam" value="<?php echo $voornaam ?>">
-                    <label for="name">Achternaam:</label>
-                    <input class="input" type="text" name="achternaam" value="<?php echo $achternaam ?>">
-                    <label for="name">Datum:</label>
-                    <input class="input" type="text" name="datum" value="<?php echo $datum ?>">
-                    <label for="name">Zichtbaar:</label>
-                    <input class="input" type="text" name="zichtbaar" value="<?php echo $zichtbaar ?>">
-                    <textarea id="desc-input" type="text" name="description"><?php echo $bericht ?></textarea>
+                    <label for="voornaam">Voornaam:</label>
+                    <input id="voornaam" class="input" type="text" name="voornaam" value="<?php echo $voornaam ?>">
+                    <label for="achternaam">Achternaam:</label>
+                    <input id="achternaam" class="input" type="text" name="achternaam" value="<?php echo $achternaam ?>">
+                    <label for="datum">Datum:</label>
+                    <input id="datum" class="input" type="text" name="datum" value="<?php echo $datum ?>">
+                    <label for="zichtbaar">Zichtbaar:</label>
+                    <input id="zichtbaar" class="input" type="text" name="zichtbaar" value="<?php echo $zichtbaar ?>">
+                    <textarea id="desc-input" name="description"><?php echo $bericht ?></textarea>
                     <button id="edit-btn" type="submit" name="edit">Bewerk</button>
                 </form>
                 <form id="delete-center" method="post">
@@ -84,7 +84,8 @@ if (isset($_POST['edit'])) {
                 </form>
             <?php }
             $sqli_prepare->close(); ?>
-    </main>
+        </main>
+    </div>
 </body>
 
 </html>

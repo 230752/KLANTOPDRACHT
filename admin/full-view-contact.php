@@ -30,7 +30,7 @@ if (isset($_POST['edit'])) {
     $email = $_POST['email'];
     $opmerking = $_POST['description'];
     $sqli_prepare = $con->prepare("UPDATE opdrachten SET datum = ?, voornaam = ?, achternaam = ?, adres = ?, telefoonnummer = ?, email = ?, opmerking = ? WHERE id = $_GET[id];");
-    $sqli_prepare->bind_param("ssssiss",  $datum, $voornaam, $achternaam, $adres, $telefoonnummer, $email, $opmerking);
+    $sqli_prepare->bind_param("ssssiss", $datum, $voornaam, $achternaam, $adres, $telefoonnummer, $email, $opmerking);
     $sqli_prepare->execute();
     $sqli_prepare->close();
     // header('location: full-view-contact.php');
@@ -54,36 +54,37 @@ if (isset($_POST['edit'])) {
 </head>
 
 <body>
-    <header>
-        <a id="return-btn" href="overview.php">Ga terug</a>
-        <form method="post">
-            <button id="log-out-btn" name="log-out">Log uit</button>
-        </form>
-    </header>
-    <main>
-        <h1>Contact Formulier:</h1>
-        <?php
-        $sqli_prepare = $con->prepare("SELECT * FROM opdrachten WHERE id = $_GET[id];");
-        $sqli_prepare->bind_result($id, $datum, $voornaam, $achternaam, $adres, $telefoonnummer, $email, $opmerking);
-        $sqli_prepare->execute(); ?>
-        <div id="container">
+    <div id="container">
+        <header>
+            <a id="return-btn" href="overview.php">Ga terug</a>
+            <form method="post">
+                <button id="log-out-btn" name="log-out">Log uit</button>
+            </form>
+        </header>
+        <main>
+            <h1>Contact Formulier:</h1>
+            <?php
+            $sqli_prepare = $con->prepare("SELECT * FROM opdrachten WHERE id = $_GET[id];");
+            $sqli_prepare->bind_result($id, $datum, $voornaam, $achternaam, $adres, $telefoonnummer, $email, $opmerking);
+            $sqli_prepare->execute(); ?>
             <?php while ($sqli_prepare->fetch()) { ?>
                 <form id="info" method="POST">
                     <h2>ID: <?php echo $id ?></h2>
-                    <label for="name">Voornaam:</label>
-                    <input class="input" type="text" name="voornaam" value="<?php echo $voornaam ?>">
-                    <label for="name">Achternaam:</label>
-                    <input class="input" type="text" name="achternaam" value="<?php echo $achternaam ?>">
-                    <label for="name">Datum:</label>
-                    <input class="input" type="text" name="datum" value="<?php echo $datum ?>">
-                    <label for="name">Adres:</label>
-                    <input class="input" type="text" name="adres" value="<?php echo $adres ?>">
-                    <label for="name">Telefoonnummer:</label>
-                    <input class="input" type="number" name="telefoonnummer" value="<?php echo $telefoonnummer ?>">
-                    <label for="name">E-mail:</label>
-                    <input class="input" type="text" name="email" value="<?php echo $email ?>">
-                    <label for="name">Beschrijving:</label>
-                    <textarea id="desc-input" type="text" name="description"><?php echo $opmerking ?></textarea>
+                    <label for="voornaam">Voornaam:</label>
+                    <input id="voornaam" class="input" type="text" name="voornaam" value="<?php echo $voornaam ?>">
+                    <label for="achternaam">Achternaam:</label>
+                    <input id="achternaam" class="input" type="text" name="achternaam" value="<?php echo $achternaam ?>">
+                    <label for="datum">Datum:</label>
+                    <input id="datum" class="input" type="text" name="datum" value="<?php echo $datum ?>">
+                    <label for="adres">Adres:</label>
+                    <input id="adres" class="input" type="text" name="adres" value="<?php echo $adres ?>">
+                    <label for="telefoonnummer">Telefoonnummer:</label>
+                    <input id="telefoonnummer" class="input" type="number" name="telefoonnummer"
+                        value="<?php echo $telefoonnummer ?>">
+                    <label for="email">E-mail:</label>
+                    <input id="email" class="input" type="text" name="email" value="<?php echo $email ?>">
+                    <label for="desc-input">Beschrijving:</label>
+                    <textarea id="desc-input" name="description"><?php echo $opmerking ?></textarea>
                     <button id="edit-btn" type="submit" name="edit">Bewerk</button>
                 </form>
                 <form id="delete-center" method="post">
@@ -91,7 +92,8 @@ if (isset($_POST['edit'])) {
                 </form>
             <?php }
             $sqli_prepare->close(); ?>
-    </main>
+        </main>
+    </div>
 </body>
 
 </html>
